@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pollock - Shop</title>
+        <!-- Favion -->
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/color.css" />
+        <link rel="stylesheet" href="../assets/css/animation.css" />
+        <link rel="stylesheet" href="../assets/css/global.css" />
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body id="shop">
+        <!-- Header -->
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="../assets/images/logo.png" alt="Logo" class="icon__default" />
+                <img src="../assets/images/logo_light.png" alt="Logo" class="icon__light" />
+            </a>
+            <nav class="nav__list">
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Services</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">About</a>
+                </div>
+                <div class="nav__item active">
+                    <span></span>
+                    <a href="#">Page</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            <div class="action">
+                <p class="action__item">
+                    <img src="../assets/images/search.png" alt="Search" class="icon__change" />
+                    <span class="tooltip">Search</span>
+                </p>
+                <p class="action__item ml40">
+                    <img src="../assets/images/bag.png" alt="Bag" class="icon__change" />
+                    <span class="action__item-dots"></span>
+                    <span class="tooltip">My Bag</span>
+                </p>
+                <p class="action__item ml40"><a href="#" class="btn btn-lg">Sign up</a></p>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="banner__page">
+            <h2 class="banner__page-title">Our Shop</h2>
+            <ul class="topicpath mt20">
+                <li class="mr10"><a href="../index.html">Homepage</a></li>
+                <li class="mr10">/</li>
+                <li>Shop</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <!-- Product List -->
+            <div class="shop">
+                <div class="shop__content">
+                    <div class="filter__list">
+                        <div class="filter__item">
+                            <div class="filter__item-header">
+                                <p class="filter__title">Product</p>
+                                <img src="../assets/images/arrow_down.png" alt="Icon Arrow Down" class="filter__icon" />
+                            </div>
+                            <div class="filter__content-body">
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Accessories" id="accessories" />
+                                    <label for="accessories">Accessories</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Camera" id="camera" />
+                                    <label for="camera">Camera</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="Computer" id="computer" />
+                                    <label for="computer">Computer</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Headphones" id="headphones" />
+                                    <label for="headphones">Headphones</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Smartphone" id="smartphone" />
+                                    <label for="smartphone">Smartphone</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="TV" id="tv" />
+                                    <label for="tv">TV</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="Video" id="video" />
+                                    <label for="video">Video</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__item mt40">
+                            <div class="filter__item-header">
+                                <p class="filter__title">Category</p>
+                                <img src="../assets/images/arrow_down.png" alt="Icon Arrow Down" class="filter__icon" />
+                            </div>
+                            <div class="filter__content-body">
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="App" id="app" />
+                                    <label for="app">App</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Audio" id="audio" />
+                                    <label for="audio">Audio</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="Electronics" id="electronics" />
+                                    <label for="electronics">Electronics</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__item mt40">
+                            <div class="filter__item-header">
+                                <p class="filter__title">Brand</p>
+                                <img src="../assets/images/arrow_down.png" alt="Icon Arrow Down" class="filter__icon" />
+                            </div>
+                            <div class="filter__content-body">
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Apple" id="apple" />
+                                    <label for="apple">Apple</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Bose" id="bose" />
+                                    <label for="bose">Bose</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="Dell" id="dell" />
+                                    <label for="dell">Dell</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="LG" id="lg" />
+                                    <label for="lg">LG</label>
+                                </div>
+                                <div class="filter__content-item">
+                                    <input type="checkbox" name="Samsung" id="samsung" />
+                                    <label for="samsung">Samsung</label>
+                                </div>
+                                <div class="filter__content-item sub">
+                                    <input type="checkbox" name="Sony" id="sony" />
+                                    <label for="sony">Sony</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__item mt40">
+                            <div class="filter__item-header">
+                                <p class="filter__title">Price</p>
+                                <img src="../assets/images/arrow_down.png" alt="Icon Arrow Down" class="filter__icon" />
+                            </div>
+                            <div class="filter__content-body">
+                                <div id="slider-range"></div>
+                                <div class="filter__price">
+                                    <p class="price">
+                                        <label for="amount">Price:</label>
+                                        <strong id="amount"></strong>
+                                    </p>
+                                    <p class="filter__btn">Filter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__list">
+                        <div class="shop__heading">
+                            <div class="shop__heading-title">Devices</div>
+                            <select name="short" id="short" class="shop__heading-select">
+                                <option value="" selected>Shorting By</option>
+                                <option value="popular">Popular</option>
+                                <option value="min">Low to high price</option>
+                                <option value="max">High to low price</option>
+                                <option value="az">A - Z</option>
+                                <option value="za">Z - A</option>
+                            </select>
+                        </div>
+                        <div class="shop__body mt20">
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img1.png" alt="Product 1" />
+                                    </p>
+                                    <p class="product__name mt10">S22 128GB</p>
+                                    <p class="product__price mt5">From $299</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img2.png" alt="Product 2" />
+                                    </p>
+                                    <p class="product__name mt10">Watch 4</p>
+                                    <p class="product__price mt5">From $399</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img3.png" alt="Product 3" />
+                                    </p>
+                                    <p class="product__name mt10">Z Fold 2</p>
+                                    <p class="product__price mt5">From $499</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img4.png" alt="Product 4" />
+                                    </p>
+                                    <p class="product__name mt10">Tab S7 FE</p>
+                                    <p class="product__price mt5">From $699</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img5.png" alt="Product 5" />
+                                    </p>
+                                    <p class="product__name mt10">The Freestyle</p>
+                                    <p class="product__price mt5">From $899</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img6.png" alt="Product 6" />
+                                    </p>
+                                    <p class="product__name mt10">Neo QLED 8K</p>
+                                    <p class="product__price mt5">From $2,999</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img7.png" alt="Product 7" />
+                                    </p>
+                                    <p class="product__name mt10">S22+ 256GB</p>
+                                    <p class="product__price mt5">From $799</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img8.png" alt="Product 8" />
+                                    </p>
+                                    <p class="product__name mt10">Buds Pro</p>
+                                    <p class="product__price mt5">From $149</p>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="./product-detail.html" class="product__link">
+                                    <p class="product__box-img">
+                                        <img src="../assets/images/product_img9.png" alt="Product 9" />
+                                    </p>
+                                    <p class="product__name mt10">S22 Ultra</p>
+                                    <p class="product__price mt5">From $999</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Navi -->
+                        <ul class="navi__list">
+                            <li class="navi__item">
+                                <a href="#"><img src="../assets/images/arrow_left.png" alt="Arrow Left" /></a>
+                            </li>
+                            <li class="navi__item active"><a href="#">1</a></li>
+                            <li class="navi__item"><a href="#">2</a></li>
+                            <li class="navi__item"><a href="#">3</a></li>
+                            <li class="navi__item"><a href="#">4</a></li>
+                            <li class="navi__item"><a href="#">...</a></li>
+                            <li class="navi__item"><a href="#">10</a></li>
+                            <li class="navi__item">
+                                <a href="#"><img src="../assets/images/arrow_right.png" alt="Arrow Right" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Page -->
+            <div class="cta__page">
+                <div class="cta__page-content">
+                    <h2 class="cta__page-content-title">
+                        Get help, find answers, download drivers, manuals and much more
+                    </h2>
+                    <p class="cta__page-content-subtitle mt30">
+                        Contact us online through chat and get support from an expert
+                    </p>
+                    <div class="cta__page-control mt60">
+                        <button class="btn btn-chat-now">Chat Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <a href="/"><img src="../assets/images/logo_light.png" alt="Logo" /></a>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Company</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">About</a></li>
+                            <li class="footer__column-item"><a href="#">Work</a></li>
+                            <li class="footer__column-item"><a href="#">Careers</a></li>
+                            <li class="footer__column-item"><a href="#">Pricing</a></li>
+                            <li class="footer__column-item"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Services</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">Branding</a></li>
+                            <li class="footer__column-item"><a href="#">Websites</a></li>
+                            <li class="footer__column-item"><a href="#">Development</a></li>
+                            <li class="footer__column-item"><a href="#">Strategy</a></li>
+                            <li class="footer__column-item"><a href="#">Platforms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Contact</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">Help</a></li>
+                            <li class="footer__column-item"><a href="#">Docs</a></li>
+                            <li class="footer__column-item"><a href="#">Open a Ticket</a></li>
+                            <li class="footer__column-item"><a href="#">Chat</a></li>
+                            <li class="footer__column-item"><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Newsletter</p>
+                        <p class="footer__column-des mt15">
+                            Subscribe to our newsletter to keep up to date on our marketing, website, design services,
+                            and tips.
+                        </p>
+                        <div class="footer__form mt15">
+                            <input type="email" placeholder="Enter mail..." class="footer__form-input mr10" />
+                            <button class="btn btn-footer">Submit</button>
+                        </div>
+                        <p class="footer__column-des mt15">
+                            We hate spam as much as you do. We will never, ever send you such emails.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__bottom mt50">
+                    <p class="copyright">
+                        © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                    </p>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#"><img src="../assets/images/icon_fb.png" alt="Facebook" /></a>
+                        </li>
+                        <li class="social__item ml20">
+                            <a href="#"><img src="../assets/images/icon_twitter.png" alt="Twitter" /></a>
+                        </li>
+                        <li class="social__item ml20">
+                            <a href="#"><img src="../assets/images/icon_linkedin.png" alt="Linkedin" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to top -->
+        <div class="scrollTop">
+            <img src="../assets/images/arrow_up.png" alt="Arrow Up" />
+        </div>
+
+        <!-- Jquery -->
+        <script type="text/javascript" src="../assets/js/jquery.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="../assets/js/wow.js"></script>
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+    </body>
+</html>

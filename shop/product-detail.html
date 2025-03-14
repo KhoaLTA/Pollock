@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pollock - Product Detail</title>
+        <!-- Favion -->
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="../assets/css/slick.css" />
+        <!-- <link rel="stylesheet" href="../assets/css/slick-theme.css" /> -->
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/color.css" />
+        <link rel="stylesheet" href="../assets/css/animation.css" />
+        <link rel="stylesheet" href="../assets/css/global.css" />
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+
+    <body id="product-detail">
+        <!-- Header -->
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="../assets/images/logo.png" alt="Logo" class="icon__default" />
+                <img src="../assets/images/logo_light.png" alt="Logo" class="icon__light" />
+            </a>
+            <nav class="nav__list">
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Services</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">About</a>
+                </div>
+                <div class="nav__item active">
+                    <span></span>
+                    <a href="#">Page</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="nav__item">
+                    <span></span>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            <div class="action">
+                <p class="action__item">
+                    <img src="../assets/images/search.png" alt="Search" class="icon__change" />
+                    <span class="tooltip">Search</span>
+                </p>
+                <p class="action__item ml40">
+                    <img src="../assets/images/bag.png" alt="Bag" class="icon__change" />
+                    <span class="action__item-dots"></span>
+                    <span class="tooltip">My Bag</span>
+                </p>
+                <p class="action__item ml40"><a href="#" class="btn btn-lg">Sign up</a></p>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="banner__page">
+            <h2 class="banner__page-title">Our Shop</h2>
+            <ul class="topicpath mt20">
+                <li class="mr10"><a href="../index.html">Homepage</a></li>
+                <li class="mr10">/</li>
+                <li>Product Detail</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <!-- Product List -->
+            <div class="product-detail">
+                <!-- Showcase -->
+                <div class="box__showcase">
+                    <!-- Product Image -->
+                    <div class="showcase__img">
+                        <div class="imgage__thumb">
+                            <img src="../assets/images/product_detail_thumb.png" alt="Product Thumb" id="thumb" />
+                        </div>
+                        <div class="slider__imgage">
+                            <div class="slider__arrow arrow__left" id="arrow__left">
+                                <img src="../assets/images/arrow_left.png" alt="Arrow Left" />
+                            </div>
+                            <ul class="image__detail-list" id="image__detail-list">
+                                <li class="image__detail-item show">
+                                    <img src="../assets/images/product_detail_img1.png" alt="Product Detail 1" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img2.png" alt="Product Detail 2" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img3.png" alt="Product Detail 3" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img4.png" alt="Product Detail 4" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img5.png" alt="Product Detail 5" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img6.png" alt="Product Detail 6" />
+                                </li>
+                                <li class="image__detail-item">
+                                    <img src="../assets/images/product_detail_img7.png" alt="Product Detail 7" />
+                                </li>
+                            </ul>
+                            <div class="slider__arrow arrow__right" id="arrow__right">
+                                <img src="../assets/images/arrow_right.png" alt="Arrow Right" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Info -->
+                    <div class="showcase__info">
+                        <h3 class="showcase__info-name">Samsung S22</h3>
+                        <p class="showcase__info-price">From $299</p>
+                        <p class="showcase__info-star mt30">
+                            <img src="../assets/images/star.png" alt="Star" />
+                            <img src="../assets/images/star.png" alt="Star" />
+                            <img src="../assets/images/star.png" alt="Star" />
+                            <img src="../assets/images/star.png" alt="Star" />
+                            <img src="../assets/images/star.png" alt="Star" />
+                        </p>
+                        <p class="showcase__info-des mt30">
+                            Make everyday epic. Introducing Galaxy S22 and S22+ with Nightography camera, storage to
+                            hold all your night shots and a way beyond all-day battery.
+                        </p>
+                        <p class="showcase__info-des mt30">
+                            Buy your Samsung Galaxy S22 Phones today at the best price!
+                            <a href="#" class="btn-more-info">More info</a>
+                        </p>
+                        <div class="showcase__info-color mt30">
+                            <p class="showcase__info-color-title">Colors</p>
+                            <ul class="showcase__info-color-list">
+                                <li class="showcase__info-color-item bg__gray">
+                                    <span class="tooltip">Grey</span>
+                                </li>
+                                <li class="showcase__info-color-item bg__green-dark">
+                                    <span class="tooltip">Green</span>
+                                </li>
+                                <li class="showcase__info-color-item bg_pink">
+                                    <span class="tooltip">Pink</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="showcase__info-add mt40">
+                            <input
+                                class="input-quantity"
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                value="1"
+                            />
+                            <button class="btn btn-lg btn-add-cart">Add to cart</button>
+                        </div>
+                        <div class="showcase__info-react mt40">
+                            <p class="icon__heart"><img src="../assets/images/icon_heart.png" alt="Icon Heart" /></p>
+                            <ul class="icon__list">
+                                <li class="icon__item">
+                                    <img src="../assets/images/icon_mail.png" alt="Icon Mail" />
+                                    <span class="tooltip">Mail</span>
+                                </li>
+                                <li class="icon__item">
+                                    <img src="../assets/images/icon_facebook.png" alt="Icon Facebook" />
+                                    <span class="tooltip">Facebook</span>
+                                </li>
+                                <li class="icon__item">
+                                    <img src="../assets/images/icon_insta.png" alt="Icon Insta" />
+                                    <span class="tooltip">Instagram</span>
+                                </li>
+                                <li class="icon__item">
+                                    <img src="../assets/images/icon_twitters.png" alt="Icon Twitter" />
+                                    <span class="tooltip">Twitter</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="showcase__info-classify mt30">
+                            <p class="showcase__info-classify-item">
+                                <span class="showcase__info-classify-title">SKU:</span>
+                                <span class="showcase__info-classify-value">001</span>
+                            </p>
+                            <p class="showcase__info-classify-item">
+                                <span class="showcase__info-classify-title">Category:</span>
+                                <span class="showcase__info-classify-value txt-color">Smartphone</span>
+                            </p>
+                            <p class="showcase__info-classify-item">
+                                <span class="showcase__info-classify-title">Tags:</span>
+                                <span class="showcase__info-classify-value txt-color">Electronics</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="box__description mt70">
+                    <div class="tabs">
+                        <div class="tab-item active">
+                            Description
+                            <span></span>
+                        </div>
+                        <div class="tab-item">
+                            Aditional Information
+                            <span></span>
+                        </div>
+                        <div class="tab-item">
+                            Reviews
+                            <span></span>
+                        </div>
+                        <div class="tab-item">
+                            Shipping Rates
+                            <span></span>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <div class="des__box">
+                                <p>
+                                    It’s our brightest innovation yet. The sensor pulls in more light, the Super Clear
+                                    Glass dials down lens flare, and fast-acting AI delivers near-instant intelligent
+                                    processing.
+                                </p>
+                                <p>
+                                    Sunlight, meet Galaxy S22's bright and Galaxy S22+'s brightest display*. The
+                                    stunning Dynamic AMOLED 2X display is crafted specifically for high outdoor
+                                    visibility, keeping the view clear in bright daylight.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane">
+                            <p class="des__detail">
+                                Customers are owners of Samsung brand phones, wishing to upgrade to
+                            </p>
+                            <p class="des__detail">
+                                Galaxy phones: Z Fold4 | ZFlip4 | S22 Series | S21 FE Series | A73 5G | A53 5G | A33 5G
+                            </p>
+                            <p class="des__detail">
+                                Galaxy tablets: Tab S8 Series, Tab S7 FE (LTE), Tab S8 (Wifi), Tab S7 SE (Wifi)
+                            </p>
+                            <p class="des__detail">Galaxy Watch: Watch5 Pro, Watch5</p>
+                            <p class="des__detail">
+                                The new old collection program does not apply when the value of the old collected
+                                product is higher than or equal to the value of the new product
+                            </p>
+                            <p class="des__detail">The old collection does not apply to the Galaxy Fit series</p>
+                        </div>
+                        <div class="tab-pane">
+                            <p class="des__detail">
+                                Compared to the previous Samsung S20 version, the design of the S21 has changed quite a
+                                bit. The camera island is not like previous models, it has two tones, the back is
+                                blurred. The aluminum frame containing the camera is connected directly from the
+                                chassis, it is neat, unique and highly identifiable. Personally, having owned both S20
+                                and S21, I like the design of the S21 more.
+                            </p>
+                            <p class="des__detail">
+                                Review samsung S21, this is a thin and light phone, it weighs only 169g and is lighter
+                                than most Flagship models in 2021. The machine is finished from plastic, the back is
+                                covered with a rough layer to minimize sweat. and fingerprints stick.
+                            </p>
+                            <p class="des__detail">
+                                Reading this far, you will probably be disappointed by a Flagship that costs more than
+                                tens of millions but only has a plastic back. However, in reality, the plastic back does
+                                not affect your use experience at all. The overall design of the machine is still very
+                                complete, luxurious and sure. As mentioned above, this material also helps the S21 to be
+                                a few grams lighter, very convenient during use.
+                            </p>
+                            <p class="des__detail">
+                                Samsung S21 has a size of only 6.2 inches, instead of the typical curved style, the
+                                device has a flat screen. The front camera position is also made very compact and does
+                                not affect the display experience of the device. As I have learned a few leaked
+                                information, this year's S22 does not have too many design breakthroughs, so buying
+                                Samsung S21 only for design, this is still a beautiful, trendy and beautiful design
+                                language. luxurious.
+                            </p>
+                            <p class="des__detail">
+                                When it comes to Samsung Flagship in general, display quality is always a factor that
+                                users appreciate. As the world's largest panel manufacturer, it is understandable that
+                                its models are always in the TOP in terms of display quality. Samsung S21 is equipped
+                                with Dynamic AMOLED 2X panel, 120Hz screen refresh rate, HDR10+ display support,
+                                brightness up to 1300 nits (peak), 1080x2400px resolution.
+                            </p>
+                            <p class="des__detail">
+                                The S21 has a maximum refresh rate of 120Hz like the S20, but will be able to drop to as
+                                low as 48Hz at non-essential tasks to strike a balance between battery life and user
+                                experience and the S20 version. there is no such intelligence.
+                            </p>
+                            <p class="des__detail">
+                                The device uses Dynamic AMOLED 2X panels, in which 2X indicates the ability to have a
+                                high refresh rate, while the Dynamic part implies support for high-quality HDR10+
+                                display. Samsung says the S21 has a maximum brightness of 1300nits, slightly lower than
+                                the 1500 promised on the S21 Ultra and Note20 Ultra.
+                            </p>
+                            <p class="des__detail">
+                                Evaluate Samsung S21, you will have the most eye-catching display experience. The image
+                                is reproduced sharp, vivid, especially with high brightness, you will have no problem
+                                using it under strong sunlight.
+                            </p>
+                        </div>
+                        <div class="tab-pane">
+                            <p class="des__detail">
+                                Compared to the previous Samsung S20 version, the design of the S21 has changed quite a
+                                bit. The camera island is not like previous models, it has two tones, the back is
+                                blurred. The aluminum frame containing the camera is connected directly from the
+                                chassis, it is neat, unique and highly identifiable. Personally, having owned both S20
+                                and S21, I like the design of the S21 more.
+                            </p>
+                            <p class="des__detail">
+                                Review samsung S21, this is a thin and light phone, it weighs only 169g and is lighter
+                                than most Flagship models in 2021. The machine is finished from plastic, the back is
+                                covered with a rough layer to minimize sweat. and fingerprints stick.
+                            </p>
+                            <p class="des__detail">
+                                Reading this far, you will probably be disappointed by a Flagship that costs more than
+                                tens of millions but only has a plastic back. However, in reality, the plastic back does
+                                not affect your use experience at all. The overall design of the machine is still very
+                                complete, luxurious and sure. As mentioned above, this material also helps the S21 to be
+                                a few grams lighter, very convenient during use.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Similar -->
+                <div class="box__similar mt70">
+                    <h2 class="similar__title">Here you can buy similar products</h2>
+                    <div class="similar__list mt70">
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img1.png" alt="Product Similar 1" />
+                                </p>
+                                <p class="similar__item-name">S22+ 256GB</p>
+                                <p class="similar__item-price">From $799</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img2.png" alt="Product Similar 2" />
+                                </p>
+                                <p class="similar__item-name">Z Fold 2</p>
+                                <p class="similar__item-price">From $499</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img3.png" alt="Product Similar 3" />
+                                </p>
+                                <p class="similar__item-name">Tab S7 FE</p>
+                                <p class="similar__item-price">From $699</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img4.png" alt="Product Similar 4" />
+                                </p>
+                                <p class="similar__item-name">S22 Ultra</p>
+                                <p class="similar__item-price">From $999</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img1.png" alt="Product Similar 1" />
+                                </p>
+                                <p class="similar__item-name">S22+ 256GB</p>
+                                <p class="similar__item-price">From $799</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img2.png" alt="Product Similar 2" />
+                                </p>
+                                <p class="similar__item-name">Z Fold 2</p>
+                                <p class="similar__item-price">From $499</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img3.png" alt="Product Similar 3" />
+                                </p>
+                                <p class="similar__item-name">Tab S7 FE</p>
+                                <p class="similar__item-price">From $699</p>
+                            </a>
+                        </div>
+                        <div class="similar__item">
+                            <a href="./product-detail.html">
+                                <p class="similar__item-img">
+                                    <img src="../assets/images/product_similar_img4.png" alt="Product Similar 4" />
+                                </p>
+                                <p class="similar__item-name">S22 Ultra</p>
+                                <p class="similar__item-price">From $999</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Page -->
+            <div class="cta__page">
+                <div class="cta__page-content">
+                    <h2 class="cta__page-content-title">
+                        Get help, find answers, download drivers, manuals and much more
+                    </h2>
+                    <p class="cta__page-content-subtitle mt30">
+                        Contact us online through chat and get support from an expert
+                    </p>
+                    <div class="cta__page-control mt60">
+                        <button class="btn btn-chat-now">Chat Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <a href="/"><img src="../assets/images/logo_light.png" alt="Logo" /></a>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Company</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">About</a></li>
+                            <li class="footer__column-item"><a href="#">Work</a></li>
+                            <li class="footer__column-item"><a href="#">Careers</a></li>
+                            <li class="footer__column-item"><a href="#">Pricing</a></li>
+                            <li class="footer__column-item"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Services</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">Branding</a></li>
+                            <li class="footer__column-item"><a href="#">Websites</a></li>
+                            <li class="footer__column-item"><a href="#">Development</a></li>
+                            <li class="footer__column-item"><a href="#">Strategy</a></li>
+                            <li class="footer__column-item"><a href="#">Platforms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Contact</p>
+                        <ul class="footer__column-list mt15">
+                            <li class="footer__column-item"><a href="#">Help</a></li>
+                            <li class="footer__column-item"><a href="#">Docs</a></li>
+                            <li class="footer__column-item"><a href="#">Open a Ticket</a></li>
+                            <li class="footer__column-item"><a href="#">Chat</a></li>
+                            <li class="footer__column-item"><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__column-title">Newsletter</p>
+                        <p class="footer__column-des mt15">
+                            Subscribe to our newsletter to keep up to date on our marketing, website, design services,
+                            and tips.
+                        </p>
+                        <div class="footer__form mt15">
+                            <input type="email" placeholder="Enter mail..." class="footer__form-input mr10" />
+                            <button class="btn btn-footer">Submit</button>
+                        </div>
+                        <p class="footer__column-des mt15">
+                            We hate spam as much as you do. We will never, ever send you such emails.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__bottom mt50">
+                    <p class="copyright">
+                        © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                    </p>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#"><img src="../assets/images/icon_fb.png" alt="Facebook" /></a>
+                        </li>
+                        <li class="social__item ml20">
+                            <a href="#"><img src="../assets/images/icon_twitter.png" alt="Twitter" /></a>
+                        </li>
+                        <li class="social__item ml20">
+                            <a href="#"><img src="../assets/images/icon_linkedin.png" alt="Linkedin" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to top -->
+        <div class="scrollTop">
+            <img src="../assets/images/arrow_up.png" alt="Arrow Up" />
+        </div>
+
+        <!-- Jquery -->
+        <script type="text/javascript" src="../assets/js/jquery.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="../assets/js/wow.js"></script>
+        <script type="text/javascript" src="../assets/js/slick.js"></script>
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+        <script type="text/javascript" src="../assets/js/product-detail.js"></script>
+    </body>
+</html>
